@@ -1,0 +1,9 @@
+{
+  "semi":true,
+  "jsx-no-lambda": false,
+  "semicolon": true,
+  "singleQuote": true,
+  "endOfLine": "auto",
+  "trailingComma": "es5",
+  "tabWidth": 2
+}
