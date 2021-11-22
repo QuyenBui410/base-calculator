@@ -1,4 +1,4 @@
-#Base Calculator
+# Base Calculator
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) using [Tailwindcss](https://tailwindcss.com/)
 
 A working demo of this project can be found [here](http://quyenbt.s3-website-ap-southeast-1.amazonaws.com/).
