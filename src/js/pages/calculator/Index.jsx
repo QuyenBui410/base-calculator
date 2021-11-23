@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 
 import ScreenCalculator from '../../components/ScreenCalculator';
-import BackgroundImage from '../../../assets/img/background.jpeg';
 import ButtonInputCalculator from '../../components/ButtonInputCalculator';
 
 import {
@@ -15,7 +14,7 @@ import { calculateFormula, formatInputFormula } from '../../helpers/calculator';
 import SettingCalculator from '../../components/SettingCalculator';
 
 const CalculatorPage = () => {
-  const [backgroundImage, setBackgroundImage] = useState(BackgroundImage);
+  const [backgroundImage, setBackgroundImage] = useState(null);
   const [themeMode, setThemeMode] = useState(THEME_BUTTONS.LIGHT.value);
   const [inputCalculator, setInputCalculator] = useState([]);
   const [outputCalculator, setOutputCalculator] = useState('');
@@ -73,8 +72,10 @@ const CalculatorPage = () => {
     <>
       <div className="grid justify-items-center pt-2">
         <div
-          className="main-calculator w-72 rounded-md bg-gray-900"
-          style={{ backgroundImage: `url(${backgroundImage})` }}
+          className="main-calculator w-72 rounded-md"
+          style={{
+            backgroundImage: backgroundImage ? `url(${backgroundImage})` : '',
+          }}
         >
           <div className="flex justify-end mb-3">
             <SettingCalculator

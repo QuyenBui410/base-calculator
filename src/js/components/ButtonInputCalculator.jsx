@@ -9,11 +9,11 @@ const ButtonInputCalculator = ({ value, themeMode, onPress }) => {
     <button
       type="button"
       shape="circle"
-      className={`button-input-calculator bg-opacity-80 ${
+      className={`button-input-calculator bg-opacity-80 font-medium ${
         value === '='
           ? THEME_BUTTONS[themeMode]?.classNameEqual
           : THEME_BUTTONS[themeMode]?.classNameInput
-      } text-lg w-12 h-12 m-2 rounded-full flex items-center justify-center`}
+      } text-lg w-12 h-12 m-2 rounded-full flex items-center justify-center hover:bg-opacity-100`}
       onClick={onClick}
     >
       {value}

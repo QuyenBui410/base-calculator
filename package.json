@@ -4,7 +4,7 @@
   "description": "",
   "main": ".eslintrc.js",
   "scripts": {
-    "start": "yarn run eslint -- --fix && webpack-dev-server --config ./webpack.dev.js --port 3000 --open",
+    "start": "webpack-dev-server --config ./webpack.dev.js --port 3000 --open",
     "server": "http-server -g",
     "test": "mocha  --require  babel-register",
     "tests": "mocha  --require babel-register --recursive './src/js/**/__tests__/*.*'",
